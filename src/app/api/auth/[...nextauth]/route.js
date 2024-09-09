@@ -7,7 +7,7 @@ export const authOptions = {
       clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENTSECRET,
     }),
   ],
-  
+  secret: process.env.NEXT_PUBLIC_AUTH_SECRET,
 };
 const handler = NextAuth(authOptions)
 export { handler as GET, handler as POST }
